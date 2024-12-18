@@ -1,14 +1,15 @@
-# Uber Clone App
+# Uber Clone App (MERN Stack)
 
 ## Overview
 
-Uber Video is a web-based platform that allows users to upload, watch, and manage videos seamlessly. The application combines a front-end built with JavaScript and a back-end for efficient video processing and storage. This repository aims to provide a scalable solution for video sharing with real-time functionality.
+This project is a complete **Uber Clone** built using the **MERN stack** (MongoDB, Express.js, React, Node.js). It features a fully functional ride-booking application, with a user-friendly interface, backend APIs, and real-time functionalities. The app mimics the core features of the Uber app, including booking rides, viewing drivers, and real-time tracking.
 
 ## Features
 
-- **Video Upload & Management**: Allows users to upload and organize videos.
-- **Real-time Video Streaming**: Seamlessly stream videos with minimal delay.
-- **User Authentication**: Supports user sign-up and login functionality.
+- **User Interface**: Designed with React.js for an intuitive front-end.
+- **Backend APIs**: Developed with Node.js and Express for handling ride-booking, user management, and trip details.
+- **Real-Time Tracking**: Implemented using WebSockets for live location updates.
+- **Authentication**: User login and registration via JWT-based authentication.
   
 ## Installation
 
@@ -16,25 +17,37 @@ Uber Video is a web-based platform that allows users to upload, watch, and manag
    ```bash
    git clone https://github.com/Adeebeeeee/UBER-Clone-App.git
    ```
-   
-2. Install the necessary dependencies:
-   ```bash
-   cd uber-video
-   npm install
-   ```
 
-3. Run the application:
-   ```bash
-   npm start
-   ```
+2. Install dependencies for the front-end and back-end:
+   - For the back-end:
+     ```bash
+     cd backend
+     npm install
+     ```
+   - For the front-end:
+     ```bash
+     cd frontend
+     npm install
+     ```
+
+3. Set up the environment variables (e.g., MongoDB URI, JWT secrets).
+
+4. Run the server and client:
+   - Start the back-end:
+     ```bash
+     cd backend
+     npm start
+     ```
+   - Start the front-end:
+     ```bash
+     cd frontend
+     npm start
+     ```
 
 ## Technologies Used
 
-- **Frontend**: JavaScript, React.js
-- **Backend**: Node.js, Express
+- **Frontend**: React.js, Redux (for state management), CSS
+- **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: JWT
-
-## Contributing
-
-Feel free to fork this repository, create a branch, and submit a pull request with your contributions.
+- **Authentication**: JWT (JSON Web Tokens)
+- **Real-Time**: Socket.io
